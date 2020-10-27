@@ -1,19 +1,13 @@
 package de.robinkuck.captutorial.handlers;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.stream.Stream;
-
-import org.junit.Before;
-import org.junit.Test;
-
-import cds.gen.catalogservice.Books;
+import cds.gen.de.robinkuck.bookshop.Book;
 
 public class CatalogServiceHandlerTest {
 
-	private CatalogServiceHandler handler = new CatalogServiceHandler();
-	private Books book = Books.create();
+	//private BookService handler = new BookService();
+	//private Book book = Book.create();
 
+    /*
 	@Before
 	public void prepareBook() {
 		book.setTitle("title");
@@ -37,6 +31,7 @@ public class CatalogServiceHandlerTest {
 	public void testNoStockAvailable() {
 		handler.discountBooks(Stream.of(book));
 		assertEquals("title", book.getTitle());
-	}
+    }
+    */
 
 }
