@@ -1,0 +1,5 @@
+ID;createdAt;isOpen;customer_ID
+1;2020-01-01T00:00:00Z;true;2
+2;2020-01-01T00:00:00Z;false;1
+3;2020-01-01T00:00:00Z;true;3
+4;2020-01-01T00:00:00Z;false;2
