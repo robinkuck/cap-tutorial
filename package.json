@@ -10,10 +10,7 @@
   "cds": {
     "requires": {
       "db": {
-        "kind": "sqlite",
-        "credentials": {
-          "database": "test.db"
-        }
+        "kind": "sqlite"
       }
     }
   }
