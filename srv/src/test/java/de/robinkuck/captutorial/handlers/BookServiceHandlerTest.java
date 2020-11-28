@@ -18,13 +18,13 @@ public class BookServiceHandlerTest {
     
 	@Before
 	public void prepareBook() {
-		book.setTitle("title");
+        book.setTitle("title");
+        book.setPrice(new BigDecimal(30.0));
 	}
 
 	@Test
 	public void testDiscount() {
         book.setStock(1200);
-        book.setPrice(new BigDecimal(30.0));
 		handler.discountBooks(Stream.of(book));
         assertEquals("title" + discountSuffix, book.getTitle());
         assertEquals(new BigDecimal(27).setScale(book.getPrice().scale()), book.getPrice());
@@ -33,7 +33,6 @@ public class BookServiceHandlerTest {
 	@Test
 	public void testNoDiscount() {
         book.setStock(100);
-        book.setPrice(new BigDecimal(30));
 		handler.discountBooks(Stream.of(book));
         assertEquals("title", book.getTitle());
         assertEquals(new BigDecimal(30), book.getPrice());
