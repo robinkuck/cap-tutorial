@@ -17,7 +17,7 @@ service OrderService {
 }
 
 //@path : 'admin'
-service AdminService {
+service AdminService @(requires: 'Admin') {
     entity Books as projection on bookshop.Book;
     entity Authors as projection on bookshop.Author;
 }
