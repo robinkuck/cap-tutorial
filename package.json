@@ -6,7 +6,7 @@
     "repository": "<Add your repository here>",
     "devDependencies": {
         "@sap/hdi-deploy": "^3.11.15",
-        "sqlite3": "^5.0.0"
+        "sqlite3": "^5.0.3"
     },
     "cds": {
         "requires": {
